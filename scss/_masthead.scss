@@ -2,11 +2,22 @@
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url('../img/header-bg.jpg');
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.25), rgba(25, 25, 25, 0.5), rgba(25, 25, 25, 0.25)), url('../img/champagne-glasses.jpeg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   @include background-cover;
+  
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   display: block;
+  //   z-index: -1;
+  //   height: 100%;
+  //   width: 100%;
+  //   background-color: hsla(0,0,20%,.5);
+  // }
+  
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
